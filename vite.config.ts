@@ -13,6 +13,8 @@ export default defineConfig(({ mode }) => ({
     },
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+   base: "/focus-court/",
+});      
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
